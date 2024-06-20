@@ -15,7 +15,6 @@ const Todos = ({ todos, deleteTodo }) => {
       const currentDate = new Date();
       const dueDate = new Date(todo.due);
       const color = currentDate < dueDate ? "#ffffff" : "#ff4040";
-      console.log(color)
       return (
         <Grid key={todo.id}>
           <Card style={{ marginTop: 10, backgroundColor: color }} data-testid={todo.content}>
